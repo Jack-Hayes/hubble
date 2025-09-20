@@ -1,0 +1,27 @@
+# STIS time-series analysis environment
+name: hst-stis-timeseries
+channels:
+  - conda-forge
+dependencies:
+  # Core scientific Python stack
+  - python=3.11
+  - numpy
+  - matplotlib
+  - scipy
+
+  # Astronomy-specific packages
+  - astropy
+  - astroquery
+
+  # Jupyter environment
+  - jupyterlab
+  - ipykernel
+
+  # Image/GIF creation tools
+  - imageio
+  - ffmpeg
+
+  # Pip for STScI-specific tools
+  - pip
+  - pip:
+    - stistools
